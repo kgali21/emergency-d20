@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import noNumberDie from './images/noNumberDie.jpg'
 
 
 const RollButton = styled.button`
@@ -8,27 +9,32 @@ const RollButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 6em;
+  zIndex: 1;
+  position: absolute;
+  top: 21em;
 `;
 
 const RollWrapper = styled.div`
-  height: 10em;
-  width: 50%;
+  height: 30em;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: solid 1px blue;
   position: absolute;
-  right: 20em;
-  bottom: 20em;
+  right: 40em;
+  top: 15em;
 `;
 
 const Title = styled.div`
   font-size: 4em;
   position: absolute;
-  left: 3.25em;
+  left: 8.5em;
   border: solid 1px red;
+  margin-top: 1em;
+  margin-bottom: 2em
 `
 
 const rollD20 = (max, min) => {
@@ -48,7 +54,8 @@ const App = () => {
     <>
         <Title>{title}</Title>
         <RollWrapper>
-          <div>{dieMin}</div>
+          <img src={noNumberDie} alt={'dfasdf'} style={{ height: '20vh', width: '10vw', zIndex: '-1', position: 'absolute' }}/>
+          <div style={{zIndex: 1, position: 'absolute', marginBottom: '.15em', fontSize: '2.5em', marginRight: '.06em'}}>{dieMin}</div>
           <RollButton onClick={handleRoll}>Roll</RollButton>
         </RollWrapper>
     </>
@@ -56,7 +63,3 @@ const App = () => {
 };
 
 export default App;
-
-{/* <svg width="400" height="110">
-<rect width="300" height="100"/>
-</svg> */}
