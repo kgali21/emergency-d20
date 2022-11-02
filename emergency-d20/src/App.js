@@ -18,7 +18,7 @@ const RollWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 1px red;
+  border: solid 1px blue;
   position: absolute;
   right: 20em;
   bottom: 20em;
