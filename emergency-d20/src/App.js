@@ -12,23 +12,23 @@ const RollButton = styled.button`
 `;
 
 const RollWrapper = styled.div`
-height: 10em;
-width: 50%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-border: solid 1px red;
-position: absolute;
-right: 20em;
-bottom: 20em;
+  height: 10em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px red;
+  position: absolute;
+  right: 20em;
+  bottom: 20em;
 `;
 
 const Title = styled.div`
-font-size: 4em;
-position: absolute;
-left: 3.25em;
-border: solid 1px red;
+  font-size: 4em;
+  position: absolute;
+  left: 3.25em;
+  border: solid 1px red;
 `
 
 const rollD20 = (max, min) => {
@@ -44,7 +44,6 @@ const App = () => {
 
   const title = `Marys' (Emergency) D20`
 
-  console.log(dieMin, 'd20 number')
     return (
     <>
         <Title>{title}</Title>
@@ -57,3 +56,7 @@ const App = () => {
 };
 
 export default App;
+
+{/* <svg width="400" height="110">
+<rect width="300" height="100"/>
+</svg> */}
