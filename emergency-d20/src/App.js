@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import noNumberDie from './images/noNumberDie.jpg'
+import noNumberDie from './images/noNumberDie.jpg';
 
 
 const RollButton = styled.button`
@@ -54,7 +54,7 @@ const App = () => {
     <>
         <Title>{title}</Title>
         <RollWrapper>
-          <img src={noNumberDie} alt={'dfasdf'} style={{ height: '20vh', width: '10vw', zIndex: '-1', position: 'absolute' }}/>
+          <img src={noNumberDie} alt={'noNumberDice'} style={{ height: '20vh', width: '10vw', zIndex: '-1', position: 'absolute' }}/>
           <div style={{zIndex: 1, position: 'absolute', marginBottom: '.15em', fontSize: '2.5em', marginRight: '.06em'}}>{dieMin}</div>
           <RollButton onClick={handleRoll}>Roll</RollButton>
         </RollWrapper>
